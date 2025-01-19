@@ -44,6 +44,7 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
     margin-top: 20px; /* Добавляем отступ сверху, чтобы форма не прижималась к header */
+    text-align: center;
 }
 
 h2 {
@@ -74,8 +75,22 @@ button:hover {
     background-color: #45a049;
 }
 
-.signup-link {
-    display: block;
+.reg-link {
     text-align: center;
-    margin-top: 15px;
+    margin: 10px 0;
+}
+
+.reg-button {
+    font-size: 1em;
+    color: #4CAF50;
+    text-decoration: none;
+    border: 1px solid #4CAF50;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.reg-button:hover {
+    background-color: #4CAF50;
+    color: white;
 }
