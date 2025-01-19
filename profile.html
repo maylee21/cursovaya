@@ -4,42 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Личный кабинет</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="profile.css">
 </head>
 <body>
-    <header>
-        <div class="logo">Прокачай ум</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="puzzles.html">Головоломки</a></li>
-                <li><a href="profile.html">Мой профиль</a></li>
-            </ul>
-        </nav>
-        <button class="logout-btn"><a href="logout.html">Выход</a></button>
-    </header>
-
-    <main>
-        <section class="profile">
-            <h1>Добро пожаловать, Иван!</h1>
-            <p>Количество решённых головоломок: 15</p>
-            <h2>Мои головоломки:</h2>
-            <ul>
-                <li>Головоломка 1 - Продолжить</li>
-                <li>Головоломка 2 - Продолжить</li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <ul>
-            <li><a href="privacy.html">Политика конфиденциальности</a></li>
-            <li><a href="terms.html">Условия использования</a></li>
-        </ul>
-        <div class="social">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
+    <div class="container">
+        <header>
+            <h1>Личный кабинет</h1>
+        </header>
+        <div class="profile-info">
+            <h2>Информация о пользователе</h2>
+            <div class="info">
+                <p><strong>Имя:</strong> Иван Иванов</p>
+                <p><strong>Почта:</strong> ivanov@example.com</p>
+            </div>
         </div>
-    </footer>
+        <div class="game-history">
+            <h2>История игр</h2>
+            <ul>
+                <li>Головоломка 1</li>
+                <li>Головоломка 2</li>
+                <li>Головоломка 3</li>
+            </ul>
+        </div>
+        <div class="popular-games">
+            <h2>Наиболее популярные игры</h2>
+            <ul>
+                <li>Головоломка 1</li>
+                <li>Головоломка 2</li>
+                <li>Головоломка 3</li>
+            </ul>
+        </div>
+        <div class="achievements">
+            <h2>Достижения</h2>
+            <p>Количество достижений: 5</p>
+        </div>
+    </div>
 </body>
 </html>

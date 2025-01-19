@@ -1,0 +1,81 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Элементы на странице выстраиваются вертикально */
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* Стили для header */
+header {
+    background-color: #4CAF50;
+    padding: 10px 0;
+    width: 100%; /* Полная ширина */
+    text-align: center;
+}
+
+/* Контейнер внутри header */
+.header-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Стили для кнопки "Вернуться на главную" */
+.back-button {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.back-button:hover {
+    background-color: #45a049;
+}
+
+/* Контейнер для формы входа */
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-top: 20px; /* Добавляем отступ сверху, чтобы форма не прижималась к header */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.signup-link {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
