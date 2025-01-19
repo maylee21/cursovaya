@@ -1,0 +1,104 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Стили для заголовков */
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Шапка сайта */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* Кнопка входа / регистрации */
+.auth-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.auth-btn:hover {
+    background-color: #45a049;
+}
+
+/* Основной контент */
+main {
+    padding: 20px;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+}
+
+.category {
+    margin-bottom: 30px;
+}
+
+.category h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.category ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.category ul li {
+    margin-bottom: 8px;
+}
+
+.category ul li a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.category ul li a:hover {
+    color: #333;
+}
+
+/* Подвал */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
