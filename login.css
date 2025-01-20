@@ -1,26 +1,37 @@
 /* Общие стили */
+html, body {
+    height: 100%; /* Обеспечиваем, что высота страницы будет 100% */
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column; /* Элементы на странице выстраиваются вертикально */
-    margin: 0;
+    justify-content: flex-start; /* Элементы выравниваются от верха */
+    align-items: center;
     background-color: #f0f0f0;
 }
 
-/* Стили для header */
 header {
     background-color: #4CAF50;
     padding: 10px 0;
-    width: 100%; /* Полная ширина */
+    width: 100%;
     text-align: center;
 }
 
-/* Контейнер внутри header */
 .header-container {
     max-width: 1000px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
 }
 
 /* Стили для кнопки "Вернуться на главную" */
@@ -30,6 +41,9 @@ header {
     font-size: 1.2em;
     padding: 10px 20px;
     border-radius: 4px;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
 }
 
 .back-button:hover {
@@ -93,4 +107,14 @@ button:hover {
 .reg-button:hover {
     background-color: #4CAF50;
     color: white;
+}
+
+/* Подвал */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto; /* Этот параметр позволяет "прижать" подвал к низу страницы */
+    width: 100%;
 }
