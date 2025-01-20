@@ -7,45 +7,58 @@
     <link rel="stylesheet" href="profile.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="navbar">
-                <h1>Личный кабинет</h1>
-                <!-- Кнопка для перехода на главную -->
-                <a href="index.html" class="btn-main">На главную</a>
-            </div>
-        </header>
+    <header>
+        <div class="navbar">
+            <h1>Сайт Головоломок</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="btn">Главная</a></li>
+                    <li><a href="#info" class="btn">Информация о пользователе</a></li>
+                    <li><a href="#history" class="btn">История игр</a></li>
+                    <li><a href="#pop" class="btn">Игры с наибольшим временем в них</a></li>
+                    <li><a href="#ach" class="btn">Достижения</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <div class="profile-info">
+    <main>
+        <h1 class="lk">Личный кабинет</h1>
+        <section class="profile-info" id="info">
             <h2>Информация о пользователе</h2>
             <div class="info">
                 <p><strong>Имя:</strong> Иван Иванов</p>
                 <p><strong>Почта:</strong> ivanov@example.com</p>
+                <p><strong>Любимая игра:</strong> <img src="https://cdn-icons-png.flaticon.com/512/4363/4363846.png" alt="Шахматы" class="img"> Шахматы</p>
             </div>
-        </div>
-        
-        <div class="game-history">
+        </section>
+
+        <section class="game-history" id="history">
             <h2>История игр</h2>
             <ul>
-                <li>Головоломка 1 - 12 Января 2025</li>
-                <li>Головоломка 2 - 10 Января 2025</li>
-                <li>Головоломка 3 - 8 Января 2025</li>
+                <li><img src="https://cdn-icons-png.flaticon.com/512/4363/4363846.png" alt="Шахматы" class="img"> Шахматы - 12 Января 2025</li>
+                <li><img src="https://icons.iconarchive.com/icons/alecive/flatwoken/128/Apps-Sudoku-icon.png" alt="Судоку" class="img"> Судоку - 10 Января 2025</li>
+                <li><img src="https://grandgames.net/img/ag/tiles3.png" alt="Три плитки" class="img"> Три плитки - 8 Января 2025</li>
             </ul>
-        </div>
-        
-        <div class="popular-games">
-            <h2>Наиболее популярные игры</h2>
+        </section>
+
+        <section class="popular-games" id="pop">
+            <h2>Игры с наибольшим количеством времени в них</h2>
             <ul>
-                <li>Головоломка 1</li>
-                <li>Головоломка 2</li>
-                <li>Головоломка 3</li>
+                <li><img src="https://cdn-icons-png.flaticon.com/512/4363/4363846.png" alt="Шахматы" class="img"> Шахматы - 50 часов</li>
+                <li><img src="https://th.bing.com/th/id/OIP.Bm9vMMerxbsxDskgeXlMBwHaEW?rs=1&pid=ImgDetMain" alt="Флаги стран" class="img"> Угадай флаг - 20 часов</li>
+                <li><img src="https://cdn-icons-png.flaticon.com/512/173/173473.png" alt="Сапёр" class="img"> Сапёр - 15 часов</li>
             </ul>
-        </div>
-        
-        <div class="achievements">
+        </section>
+
+        <section class="achievements" id="ach">
             <h2>Достижения</h2>
             <p>Количество достижений: 5</p>
-        </div>
-    </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Сайт головоломок. Все права защищены.</p>
+    </footer>
 </body>
 </html>
