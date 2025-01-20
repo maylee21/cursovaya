@@ -12,42 +12,119 @@
             <h1>Сайт Головоломок</h1>
             <nav>
                 <ul>
+                    <li><a href="#about" class="btn">О нас</a></li>
+                    <li><a href="#logic" class="btn">Логические головоломки</a></li>
+                    <li><a href="#math" class="btn">Математические головоломки</a></li>
+                    <li><a href="#memory" class="btn">Игры на память и внимательность</a></li>
                     <!-- Кнопка, которая ведет либо на страницу входа, либо на страницу регистрации -->
-                    <li><a href="registration.html" class="auth-btn">Вход / Регистрация</a></li>
+                    <li><a href="registration.html" class="btn">Вход / Регистрация</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
+        <section class="description">
+            <h2>Добро пожаловать на сайт головоломок!</h2>
+            <p>Наш сайт предлагает уникальную коллекцию головоломок и интеллектуальных игр для всех любителей разгадывать загадки и развивать свои умственные способности. Мы собрали лучшие логические, математические и игровые задачи, которые помогут вам тренировать память, внимательность и аналитическое мышление.</p>
+            <p>В нашем каталоге вы найдете:</p>
+            <ul>
+                <li><strong>Логические головоломки</strong>: Шахматы, Пятнашки и Сапёр игры для настоящих стратегов.</li>
+                <li><strong>Математические головоломки</strong>: Судоку, 2048, Какуро — отличные способы проверить свои математические навыки.</li>
+                <li><strong>Игры на память и внимательность</strong>: Угадай флаг, Найди пару, Три плитки — тренируйте внимание и скорость реакции.</li>
+            </ul>
+            <p>Идеально подходит как для начинающих, так и для опытных игроков. Наслаждайтесь игрой и улучшайте свои навыки с нами!</p>
+        </section>
         <section class="categories">
             <h2>Категории головоломок</h2>
             <div class="category" id="logic">
                 <h3>Логические головоломки</h3>
                 <ul>
-                    <li><a href="puzzle1.html">Головоломка 1</a></li>
-                    <li><a href="puzzle2.html">Головоломка 2</a></li>
-                    <li><a href="puzzle3.html">Головоломка 3</a></li>
+                    <li>
+                        <a href="https://lichess.org/training/daily">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4363/4363846.png" alt="Шахматы" class="img">Шахматы
+                        </a>
+                        <p>Тренируйте стратегическое мышление и логику, решая задачи по нахождению лучших ходов.</p>
+                    </li>
+                    <li>
+                        <a href="https://tictactoefree.com/ru/pyatnashki/">
+                        <img src="https://book.etudes.ru/.data/illustrations/2pyatnashki03@fhd.jpg" alt="Пятнашки" class="img">Пятнашки
+                        </a>
+                        <p>Расставьте все 15 ячеек таким образом, чтобы они составляли последовательность от 1 до 15.</p>
+                    </li>
+                    <li>
+                        <a href="https://www.minesweeperonline.com/">
+                        <img src="https://cdn-icons-png.flaticon.com/512/173/173473.png" alt="Сапёр" class="img">Сапёр
+                        </a>
+                        <p>Откройте всё поле так, чтобы закрытыми остались лишь ячейки с минами.</p>
+                    </li>
                 </ul>
             </div>
 
             <div class="category" id="math">
                 <h3>Математические головоломки</h3>
                 <ul>
-                    <li><a href="puzzle4.html">Головоломка 4</a></li>
-                    <li><a href="puzzle5.html">Головоломка 5</a></li>
-                    <li><a href="puzzle6.html">Головоломка 6</a></li>
+                    <li>
+                        <a href="https://2048game.com/">
+                        <img src="https://static-00.iconduck.com/assets.00/2048-icon-507x512-ihtslozc.png" alt="2048" class="img">2048
+                        </a>
+                        <p>Попробуйте достичь числа 2048, комбинируя одинаковые числа на игровом поле.</p>
+                    </li>
+                    <li>
+                        <a href="https://www.kakuro.com/">
+                        <img src="https://grandgames.net/img/ag/kakuro.png" alt="Какуро" class="img">Какуро
+                        </a>
+                        <p>Математическая игра, где нужно заполнить клетки числами, соблюдая правила сложения и избегая повторений.</p>
+                    </li>
+                    <li>
+                        <a href="https://sudoku.com/">
+                        <img src="https://icons.iconarchive.com/icons/alecive/flatwoken/128/Apps-Sudoku-icon.png" alt="Судоку" class="img">Судоку
+                        </a>
+                        <p>Заполняйте сетку чисел, соблюдая правила Судоку — каждое число должно встречаться только один раз в строках, столбцах и областях.</p>
+                    </li>
                 </ul>
             </div>
 
-            <div class="category" id="word">
-                <h3>Словесные головоломки</h3>
+            <div class="category" id="memory">
+                <h3>Игры на память и внимательность</h3>
                 <ul>
-                    <li><a href="puzzle7.html">Головоломка 7</a></li>
-                    <li><a href="puzzle8.html">Головоломка 8</a></li>
-                    <li><a href="puzzle9.html">Головоломка 9</a></li>
+                    <li>
+                        <a href="https://yandex.ru/games/app/182765">
+                        <img src="https://th.bing.com/th/id/OIP.Bm9vMMerxbsxDskgeXlMBwHaEW?rs=1&pid=ImgDetMain" alt="Флаги стран" class="img">Угадай флаг
+                        </a>
+                        <p>Тренируйте свою память и географические знания, угадывая флаги стран мира.</p>
+                    </li>
+                    <li>
+                        <a href="https://yandex.ru/games/app/387959">
+                        <img src="https://grandgames.net/img/ag/tiles3.png" alt="Три плитки" class="img">Три плитки
+                        </a>
+                        <p>Внимательно смотрите на плитки, подберите три одинаковых и очистите всё поле чтобы выиграть.</p>
+                    </li>
+                    <li>
+                        <a href="https://yandex.ru/games/app/184907">
+                        <img src="https://avatars.mds.yandex.net/get-games/6300668/2a0000017ff2a81f7ea2ede1347f030f9e3b/pjpg160x160" alt="Найди пару" class="img">Найди пару
+                        </a>
+                        <p>Тренируйте память, находя пары одинаковых карт в этом увлекательном игровом процессе.</p>
+                    </li>
                 </ul>
             </div>
+        </section>
+        <section class = "about" id="about">
+            <h2>О нас!</h2>
+            <p>К сожалению на этом наши игры закончились, надеюсь вы хорошо провели время!</p>
+            <p>Надеюсь у вас остались только хорошие впечатления от нашего сайта. С разработчиком можно связаться следующим образом:</p>
+            <ul>
+                <li>
+                    <a href="https://vk.com/id169563238">
+                        <img src="https://img.freepik.com/vetores-premium/icone-vkontakte-de-distintivo-moderno_578229-170.jpg" alt="Вконтакте" class="img">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://web.telegram.org/k/#netidk">
+                        <img src="https://pngimg.com/uploads/telegram/small/telegram_PNG33.png" alt="Телеграмм" class="img">
+                    </a>
+                </li>
+            </ul>
         </section>
     </main>
 
