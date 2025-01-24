@@ -247,57 +247,72 @@ footer {
 
 /* Адаптивность */
 
-/* Планшеты (от 768px до 1199px) */
-@media (max-width: 1199px) and (min-width: 768px) {
+/* Медиа-запрос для планшетов (ширина 1200px и меньше) */
+@media (max-width: 1200px) {
     .info, .his, .popl {
-        flex-wrap: wrap;
+        flex-direction: column;
         gap: 15px;
     }
 
-    .profile-info img, .his img, .popular-games img {
-        max-width: 100px;
-    }
-
-    .game-history ul li, .popular-games ul li {
-        width: 90%;
-    }
-
-    .navbar h1 {
-        font-size: 20px;
-    }
-
-    .btn {
-        font-size: 1em;
-        padding: 8px 12px;
-    }
-}
-
-/* Мобильные устройства (меньше 768px) */
-@media (max-width: 767px) {
-    .info, .his, .popl {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .profile-info img, .his img, .popular-games img {
-        max-width: 80px;
-    }
-
-    .game-history ul li, .popular-games ul li {
-        width: 100%;
-        font-size: 14px;
-    }
-
-    .navbar h1 {
+    .profile-info p, .game-history ul li, .popular-games ul li {
         font-size: 18px;
     }
 
-    .btn {
-        font-size: 0.9em;
-        padding: 6px 10px;
+    .his img, .popular-games img {
+        max-width: 120px;
     }
 
-    footer {
-        font-size: 0.9em;
+    .btn {
+        font-size: 18px;
+        padding: 10px 18px;
+    }
+}
+
+/* Медиа-запрос для мобильных устройств (ширина 768px и меньше) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar h1 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .info, .his, .popl {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .his img, .popular-games img {
+        max-width: 100px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    h1.lk {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .profile-info p, .game-history ul li, .popular-games ul li {
+        font-size: 16px;
     }
 }

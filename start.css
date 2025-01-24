@@ -225,50 +225,92 @@ footer {
 
 /* Адаптивность */
 
-/* Планшеты (от 768px до 1199px) */
-@media (max-width: 1199px) and (min-width: 768px) {
+/* Адаптивность для экранов до 1200px (ноутбуки, большие планшеты) */
+@media (max-width: 1200px) {
     .navbar {
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     nav ul li {
-        margin: 5px;
+        margin-left: 10px; /* Уменьшаем отступы в меню */
+    }
+
+    .categories {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .category {
+        width: 48%; /* Размещаем категории в две колонки */
+        margin: 10px;
+    }
+}
+
+/* Адаптивность для экранов до 768px (планшеты и мобильные устройства) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column; /* Делаем меню вертикальным */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .categories {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category {
+        width: 90%; /* Растягиваем категории на всю ширину */
+    }
+
+    .category ul li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .category ul li a {
+        font-size: 16px; /* Уменьшаем шрифт */
+    }
+
+    .img {
+        max-width: 50px;
+        max-height: 50px;
     }
 
     .btn {
+        font-size: 14px; /* Уменьшаем кнопки */
         padding: 8px 16px;
+    }
+
+    .description, .about {
+        padding: 10px;
+    }
+
+    .description h2, .about h2 {
+        font-size: 20px;
+    }
+
+    footer {
         font-size: 14px;
     }
 }
 
-/* Мобильные устройства (меньше 768px) */
-@media (max-width: 767px) {
-    .navbar {
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    nav ul li {
-        margin: 5px 0;
-    }
-
-    .btn {
-        padding: 5px 10px;
-        font-size: 12px;
-    }
-
-    .img {
-        max-width: 40px;
-        max-height: 40px;
-    }
-
-    .description p, .description ul li {
-        font-size: 16px;
-    }
-}

@@ -129,69 +129,61 @@ footer {
 
 /* Адаптивность */
 
-/* Планшеты (от 768px до 1199px) */
-@media (max-width: 1199px) and (min-width: 768px) {
-    .header-container {
-        flex-wrap: nowrap;
-        justify-content: space-between;
+/* Медиа-запрос для планшетов (ширина 1200px и меньше) */
+@media (max-width: 1200px) {
+    .login-container {
+        width: 400px;
+        padding: 25px;
+    }
+
+    input {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .reg-button {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+}
+
+/* Медиа-запрос для мобильных устройств (ширина 768px и меньше) */
+@media (max-width: 768px) {
+    .login-container {
+        width: 90%;
+        padding: 20px;
     }
 
     h1 {
         font-size: 20px;
     }
 
-    .login-container {
-        width: 400px;
-        margin-top: 30px;
+    h2 {
+        font-size: 22px;
     }
 
     input {
-        font-size: 14px;
+        font-size: 16px;
+        padding: 10px;
     }
 
     button {
-        font-size: 14px;
-        padding: 8px;
+        font-size: 16px;
+        padding: 10px;
     }
 
     .reg-button {
-        font-size: 0.9em;
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .back-button {
+        font-size: 1em;
         padding: 8px 16px;
-    }
-}
-
-/* Мобильные устройства (меньше 768px) */
-@media (max-width: 767px) {
-    .header-container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    h1 {
-        font-size: 18px;
-    }
-
-    .login-container {
-        width: 90%;
-        margin-top: 20px;
-    }
-
-    input {
-        font-size: 12px;
-        padding: 8px;
-    }
-
-    button {
-        font-size: 12px;
-        padding: 6px;
-    }
-
-    .reg-button {
-        font-size: 0.8em;
-        padding: 6px 12px;
-    }
-
-    footer {
-        font-size: 0.9em;
     }
 }
