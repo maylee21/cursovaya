@@ -19,25 +19,29 @@ body {
 
 header {
     background-color: #4CAF50;
-    padding: 10px 0;
     width: 100%;
-    text-align: center;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
 }
 
 .header-container {
-    max-width: 1000px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    width: 100%;
+    justify-content: space-between;
 }
 
 h1 {
-    color: #333;
+    color: black;
     font-size: 24px;
+    margin: 0;
+    flex: 0 0 auto;
 }
 
-/* Стили для кнопки "Вернуться на главную" */
 .back-button {
     color: white;
     text-decoration: none;
@@ -45,8 +49,8 @@ h1 {
     padding: 10px 20px;
     border-radius: 4px;
     position: absolute;
-    transform: translateX(-50%);
     left: 50%;
+    transform: translateX(-50%);
 }
 
 .back-button:hover {
@@ -120,4 +124,73 @@ footer {
     padding: 15px;
     margin-top: auto; /* Этот параметр позволяет "прижать" подвал к низу страницы */
     width: 100%;
+}
+
+/* Адаптивность */
+
+/* Планшеты (от 768px до 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .header-container {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .login-container {
+        width: 400px;
+        margin-top: 30px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .reg-button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
+
+/* Мобильные устройства (меньше 768px) */
+@media (max-width: 767px) {
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .login-container {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    input {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .reg-button {
+        font-size: 0.8em;
+        padding: 6px 12px;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
 }

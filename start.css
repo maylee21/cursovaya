@@ -11,8 +11,12 @@ html {
 }
 
 /* Стили для заголовков */
-h1, h2, h3 {
+h1{
     color: #333;
+}
+h2, h3{
+    color: #333;
+    text-align: center;
 }
 
 /* Шапка сайта */
@@ -20,6 +24,7 @@ header {
     background-color: #4CAF50;
     color: white;
     padding: 15px 0;
+    height: auto;
 }
 
 .navbar {
@@ -31,14 +36,21 @@ header {
 
 .navbar h1 {
     font-size: 24px;
+    flex: 0 0 auto;
+    margin: 0;
 }
 
 nav ul {
     list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+    flex: 1 1 auto;
 }
 
 nav ul li {
-    display: inline-block;
     margin-left: 20px;
 }
 
@@ -53,6 +65,8 @@ nav ul li {
     cursor: pointer;
     transition: background-color 0.3s;
     border-radius: 5px;
+    display: inline-block;
+    text-align: center;
 }
 
 .btn:hover {
@@ -122,8 +136,13 @@ ul {
     max-width: 50px;  /* Ограничиваем размер изображения */
     max-height: 50px;
     border-radius: 5px;
+    transition: 0.5s ease;
+    vertical-align: middle;
 }
+.img:hover{
+    scale: 1.2;
 
+}
 
 /* Подвал */
 footer {
@@ -134,8 +153,6 @@ footer {
     margin-top: auto;
     width: 100%;
 }
-
-
 
 /* Стили для описания */
 .description {
@@ -195,4 +212,63 @@ footer {
     color: #555;
     line-height: 1.6;
     margin-bottom: 15px;
+}
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.social-link, .email-link{
+    text-decoration: none;
+}
+
+/* Адаптивность */
+
+/* Планшеты (от 768px до 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    nav ul li {
+        margin: 5px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* Мобильные устройства (меньше 768px) */
+@media (max-width: 767px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .btn {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .img {
+        max-width: 40px;
+        max-height: 40px;
+    }
+
+    .description p, .description ul li {
+        font-size: 16px;
+    }
 }

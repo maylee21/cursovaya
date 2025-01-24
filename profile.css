@@ -10,22 +10,29 @@ html {
     scroll-behavior: smooth;
 }
 
-
 /* Стили для заголовков */
-h1, h2 {
+h1 {
     color: #333;
+}
+h2 {
+    color: #333;
+    text-align: center;
+}
+.img {
+    vertical-align: middle;
 }
 
 /* Шапка сайта */
 header {
     background-color: #4CAF50;
     color: white;
-    padding: 30px 0;
+    padding: 15px 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: auto;
 }
 
-.lk{
+.lk {
     text-align: center;
     padding: 20px;
 }
@@ -111,9 +118,21 @@ section {
 .profile-info p strong {
     font-weight: bold;
 }
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile-info img {
+    max-width: 50px;
+    height: auto;
+}
 
 /* История игр */
 .game-history {
+    background: url('https://www.pngkey.com/png/full/169-1699975_puzzle-frame-autism-puzzle-png.png') no-repeat center/cover;
     background-color: #ffffff;
     border: 2px solid #ddd; /* Зеленая рамка для выделения */
 }
@@ -129,14 +148,28 @@ section {
 }
 
 .game-history ul li {
+    width: 100%;
     padding: 10px;
     margin-bottom: 8px;
     border-radius: 5px;
     font-size: 16px;
 }
 
+.his {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.his img {
+    max-width: 150px;
+    height: auto;
+}
+
 /* Наиболее популярные игры */
 .popular-games {
+    background: url('https://cdn.culture.ru/images/1336e591-9375-5f1d-a8cf-18d7d8a4df1a') no-repeat center/cover;
     background-color: #ffffff;
     border: 2px solid #ddd; /* Зеленая рамка для выделения */
 }
@@ -152,8 +185,21 @@ section {
 }
 
 .popular-games ul li {
+    width: 100%;
     font-size: 16px;
     margin-bottom: 8px;
+}
+
+.popl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.popular-games img {
+    max-width: 150px;
+    height: auto;
 }
 
 /* Достижения */
@@ -198,7 +244,60 @@ footer {
 .btn:hover {
     background-color: #45a049;
 }
-.img{
-    max-width: 50px;
-    max-height: 50px;
+
+/* Адаптивность */
+
+/* Планшеты (от 768px до 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .info, .his, .popl {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .profile-info img, .his img, .popular-games img {
+        max-width: 100px;
+    }
+
+    .game-history ul li, .popular-games ul li {
+        width: 90%;
+    }
+
+    .navbar h1 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 8px 12px;
+    }
+}
+
+/* Мобильные устройства (меньше 768px) */
+@media (max-width: 767px) {
+    .info, .his, .popl {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .profile-info img, .his img, .popular-games img {
+        max-width: 80px;
+    }
+
+    .game-history ul li, .popular-games ul li {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .navbar h1 {
+        font-size: 18px;
+    }
+
+    .btn {
+        font-size: 0.9em;
+        padding: 6px 10px;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
 }
