@@ -132,7 +132,7 @@ section {
 
 /* История игр */
 .game-history {
-    background: url('https://www.pngkey.com/png/full/169-1699975_puzzle-frame-autism-puzzle-png.png') no-repeat center/cover;
+    background: url('images/da.png') no-repeat center/cover;
     background-color: #ffffff;
     border: 2px solid #ddd; /* Зеленая рамка для выделения */
 }
@@ -169,7 +169,7 @@ section {
 
 /* Наиболее популярные игры */
 .popular-games {
-    background: url('https://cdn.culture.ru/images/1336e591-9375-5f1d-a8cf-18d7d8a4df1a') no-repeat center/cover;
+    background: url('images/net.jfif') no-repeat center/cover;
     background-color: #ffffff;
     border: 2px solid #ddd; /* Зеленая рамка для выделения */
 }
